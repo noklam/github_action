@@ -14,3 +14,12 @@ jobs:
         run:  |
           pip install attrs
           python nok.py
+  Secrets:
+  runs-on: ubuntu-latest
+    steps:
+    - run: echo "${{ secrets.SECRET }}"
+    - run: echo $MY_VAR
+    env:
+      MY_VAR: ${{ secrets.SECRET }}
+
+
