@@ -13,4 +13,4 @@ jobs:
       - name: run my python script
         run:  |
           pip install attrs
-          python no.py
+          python nok.py
