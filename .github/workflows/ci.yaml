@@ -27,5 +27,4 @@ jobs:
     - run: |
         import os
         print("This is running in a Python Shell!")
-    shell: python
-
+      shell: python
