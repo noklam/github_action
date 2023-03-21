@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-      import os
-      print("This is running in a Python Shell!")
+        import os
+        print("This is running in a Python Shell!")
     shell: python
 
