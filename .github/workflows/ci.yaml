@@ -16,10 +16,10 @@ jobs:
           python nok.py
   test-secrets:
     runs-on: ubuntu-latest
-      steps:
-      - run: echo "${{ secrets.SECRET }}"
-      - run: echo $MY_VAR
-      env:
-        MY_VAR: ${{ secrets.SECRET }}
+    steps:
+    - run: echo "${{ secrets.SECRET }}"
+    - run: echo $MY_VAR
+    env:
+      MY_VAR: ${{ secrets.SECRET }}
 
 
