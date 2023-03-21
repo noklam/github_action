@@ -21,5 +21,11 @@ jobs:
     - run: echo $MY_VAR
     env:
       MY_VAR: ${{ secrets.SECRET }}
-
+  python-shell:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+      import os
+      print("This is running in a Python Shell!")
+    shell: python
 
